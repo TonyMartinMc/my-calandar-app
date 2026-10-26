@@ -1,0 +1,106 @@
+.rcp-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.rcp-section-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* STANDARD OPTIONS */
+.rcp-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rcp-btn {
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.rcp-btn:hover {
+  border-color: var(--pink);
+  color: var(--pink-dark);
+  background: var(--pink-light);
+}
+
+.rcp-selected {
+  background: var(--pink) !important;
+  border-color: var(--pink) !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+/* CUSTOM DAY PICKER */
+.rcp-custom {
+  background: var(--pink-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rcp-days {
+  display: flex;
+  gap: 6px;
+}
+
+.rcp-day-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-soft);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s;
+  flex-shrink: 0;
+}
+
+.rcp-day-btn:hover {
+  border-color: var(--pink);
+  color: var(--pink-dark);
+  background: var(--white);
+}
+
+.rcp-day-selected {
+  background: var(--pink) !important;
+  border-color: var(--pink) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* END DATE */
+.rcp-end-date {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
